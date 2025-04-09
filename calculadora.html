@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Apuestas</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <main>
+    <h1>Calculadora de Apuestas</h1>
+    <form id="formApuesta">
+      <label for="monto">Monto de la Apuesta:</label>
+      <input type="text" id="monto" name="monto" required>
+
+      <label for="cuota">Cuota Ofrecida:</label>
+      <input type="text" id="cuota" name="cuota" required>
+
+      <button type="submit">Calcular Ganancia</button>
+      <button type="button" onclick="limpiarFormulario()">Limpiar</button>
+    </form>
+
+    <div id="resultado"></div>
+    <div id="error"></div>
+  </main>
+
+  <script src="calculadora.js"></script>
+</body>
+</html>
+
